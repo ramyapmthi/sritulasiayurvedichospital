@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Reviews & Success Stories | Sri Tulasi</title>
+    <!-- FontAwesome & Main Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .review-stats {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            margin-top: -4rem;
+            position: relative;
+            z-index: 10;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .review-stats h2 {
+            font-size: 4rem;
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1;
+            font-family: var(--font-body);
+        }
+        .review-stats .stars {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #FFB400;
+        }
+        
+        .video-reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        .video-card {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            cursor: pointer;
+        }
+        .video-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        .video-card:hover img {
+            transform: scale(1.05);
+        }
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        .video-card:hover .play-btn {
+            background: var(--secondary);
+            color: var(--white);
+        }
+
+        .success-story {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 3rem;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        .success-content {
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .before-after-img {
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            .success-story { grid-template-columns: 1fr; }
+            .review-stats { margin-left: 1rem; margin-right: 1rem; }
+        }
+    </style>
+</head>
+<body style="background-color: var(--bg-color);">
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-leaf text-secondary" style="font-size: 2rem;"></i>
+                <div class="nav-logo">
+                    Sri Tulasi 
+                    <span>Ayurvedic Hospital</span>
+                </div>
+            </a>
+            <nav>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="reviews.html" class="nav-link active">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Locations</a></li>
+                    <li><a href="https://wa.me/919393934013?text=Hello,%20I%20need%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary">Start Your Healing Journey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header fade-up">
+        <div class="container">
+            <h1>Patient Reviews</h1>
+            <p>Real experiences from our patients who discovered profound healing.</p>
+        </div>
+    </section>
+
+    <div class="container review-stats fade-up" style="display:flex; flex-direction:column; align-items:center;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 0.5rem;">
+            <i class="fa-brands fa-google" style="font-size: 3rem; color: #DB4437;"></i>
+            <h2 style="margin:0; font-size:4rem;">4.9</h2>
+        </div>
+        <div class="stars" style="margin: 0 0 1rem 0;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div style="background: rgba(15,157,88,0.1); color: #0F9D58; padding: 0.5rem 1rem; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 1rem;">
+            <i class="fa-solid fa-circle-check"></i> Google Verified Patient Reviews
+        </div>
+        <p style="font-size: 1.1rem; color: var(--text-dark); margin:0;">Based on <strong>122+ Reviews</strong></p>
+    </div>
+
+    <section class="container section-padding pb-0" style="padding-top: 3rem;">
+        
+        <!-- Video Testimonials Mockup -->
+        <div class="text-center fade-up" style="margin-bottom: 2rem;">
+            <h2>Video Testimonials</h2>
+        </div>
+        <div class="video-reviews fade-up">
+            <!-- Playable Video 1 -->
+            <div class="video-card" style="padding-bottom: 56.25%; height: 0; overflow: hidden; position: relative;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/ScMzIvxBSi4?rel=0" title="Patient Review 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Playable Video 2 -->
+            <div class="video-card" style="padding-bottom: 56.25%; height: 0; overflow: hidden; position: relative;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0" title="Patient Review 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Playable Video 3 Fixed -->
+            <div class="video-card" style="padding-bottom: 56.25%; height: 0; overflow: hidden; position: relative;">
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" title="Patient Review 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Google Style Rating Cards -->
+        <div class="text-center fade-up" style="margin-top: 5rem; margin-bottom: 2rem;">
+            <h2>What Patients Are Saying</h2>
+        </div>
+        <div class="testimonial-grid fade-up" style="margin-bottom: 5rem;">
+            <div class="testimonial-card">
+                <div class="patient-info" style="margin-bottom: 1rem;">
+                    <div class="patient-avatar" style="background-color: #4285F4;">A</div>
+                    <div>
+                        <h4 style="margin: 0; font-family:var(--font-body);">Amrutha Valli</h4>
+                        <span style="font-size: 0.8rem; color:var(--text-muted);">Local Guide</span>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:0.9rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"Here treatment is good. Doctors and staff also taking care. Here all types of pain relefing systems is doing. Insurance claim is there."</p>
+                <span style="font-size: 0.8rem; color:#888;">6 months ago</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="patient-info" style="margin-bottom: 1rem;">
+                    <div class="patient-avatar" style="background-color: #0F9D58;">G</div>
+                    <div>
+                        <h4 style="margin: 0; font-family:var(--font-body);">Gnana</h4>
+                        <span style="font-size: 0.8rem; color:var(--text-muted);">5 reviews</span>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:0.9rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"I was diagnosed with High Grade ACL tear and couldn't recover from pain for 4 weeks. Adeera was my therapist, she is very good at her work. Excellent staff Friendly environment."</p>
+                <span style="font-size: 0.8rem; color:#888;">a year ago</span>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="patient-info" style="margin-bottom: 1rem;">
+                    <div class="patient-avatar" style="background-color: #DB4437;">V</div>
+                    <div>
+                        <h4 style="margin: 0; font-family:var(--font-body);">Ghanta Venkaih</h4>
+                        <span style="font-size: 0.8rem; color:var(--text-muted);">2 reviews</span>
+                    </div>
+                </div>
+                <div class="stars" style="font-size:0.9rem; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="testimonial-text">"Good treatment. Nice hospital and ambience. Doctor and staff are so kind towards patient. Worthy treatment. Best hospital and Good facilities with experienced doctors."</p>
+                <span style="font-size: 0.8rem; color:#888;">a year ago</span>
+            </div>
+        </div>
+
+        <!-- Before / After Success Stories -->
+        <div class="text-center fade-up" style="margin-top: 5rem; margin-bottom: 2rem;">
+            <h2>Success Stories</h2>
+        </div>
+        
+        <div class="success-story fade-up" style="margin-bottom: 6rem;">
+            <div class="success-content">
+                <span class="about-badge" style="width:fit-content; background: rgba(212, 175, 55, 0.2);">Orthopedic Recovery</span>
+                <h3 style="font-size: 1.8rem;">Overcoming Chronic Severe Joint Pain</h3>
+                <p>A patient presented with debilitating joint pain that restricted daily movement for nearly 2 years despite conventional medicine. After undergoing an intensive 21-day personalized Ayurvedic therapy involving Panchakarma and specialized Kati Basti, their mobility increased dramatically and pain reduced by 80%.</p>
+                <ul style="list-style: none; padding-left:0; margin-top: 1rem;">
+                    <li style="margin-bottom: 5px;"><i class="fa-solid fa-check text-secondary" style="margin-right:5px;"></i> Restored Mobility</li>
+                    <li style="margin-bottom: 5px;"><i class="fa-solid fa-check text-secondary" style="margin-right:5px;"></i> Reduced Dependency on Painkillers</li>
+                </ul>
+            </div>
+            <div class="before-after-img">
+                <i class="fa-solid fa-person-walking" style="font-size: 5rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                <h3 style="color:var(--white);">A Life Transformed Through Ayurveda</h3>
+                <p style="color:rgba(255,255,255,0.8);">Mobility enhanced from 20% to 90% in 3 weeks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="nav-logo" style="color:var(--white); margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-leaf text-secondary" style="margin-right: 5px;"></i>
+                        Sri Tulasi
+                    </div>
+                    <p style="font-size: 0.9rem;">Authentic Ayurvedic Healing with Modern Care.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Tulasi Ayurvedic Hospital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919393934013" target="_blank" class="floating-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Sri Tulasi Ayurvedic Hospital</title>
+    <!-- FontAwesome & Main Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .service-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 6rem;
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+        .service-row:nth-child(even) {
+            direction: rtl;
+        }
+        .service-row:nth-child(even) .service-content {
+            direction: ltr; /* fix text direction back to normal */
+        }
+        .service-img img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--radius-md);
+        }
+        .service-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .service-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        .service-detail-item h4 {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .service-detail-item i {
+            color: var(--secondary);
+        }
+        .service-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 992px) {
+            .service-row { grid-template-columns: 1fr; direction: ltr !important; padding: 1rem; }
+            .service-img img { height: 300px; }
+            .service-details { grid-template-columns: 1fr; gap: 1rem;}
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-leaf text-secondary" style="font-size: 2rem;"></i>
+                <div class="nav-logo">
+                    Sri Tulasi 
+                    <span>Ayurvedic Hospital</span>
+                </div>
+            </a>
+            <nav>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link active">Services</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Locations</a></li>
+                    <li><a href="https://wa.me/919393934013?text=Hello,%20I%20need%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary">Start Your Healing Journey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header fade-up">
+        <div class="container">
+            <h1>Our Holistic Treatments</h1>
+            <p>Explore our comprehensive range of authentic therapies delivered by expert practitioners.</p>
+        </div>
+    </section>
+
+    <!-- Services Container -->
+    <section class="container section-padding pb-0" style="padding-top: 5rem;">
+        
+        <!-- Panchakarma -->
+        <div class="service-row fade-up" id="panchakarma">
+            <div class="service-img">
+                <img src="images/panchakarma.png" alt="Panchakarma Therapy">
+            </div>
+            <div class="service-content">
+                <h2>Panchakarma Therapy</h2>
+                <p>An intricate and completely authentic detoxification treatment meant to cleanse the body of toxic materials left by disease, poor nutrition, and environmental toxins.</p>
+                
+                <div class="service-details">
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-star"></i> Benefits</h4>
+                        <p style="font-size: 0.9rem;">Deep tissue detox, immune system boost, stress reduction.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clipboard-list"></i> Process</h4>
+                        <p style="font-size: 0.9rem;">Vamana, Virechana, Basti, Nasya, and Raktamokshana therapies.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clock"></i> Duration</h4>
+                        <p style="font-size: 0.9rem;">7 to 21 Days (Customized)</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-users"></i> Ideal For</h4>
+                        <p style="font-size: 0.9rem;">Anyone seeking deep detox, chronic illness sufferers.</p>
+                    </div>
+                </div>
+                
+                <div class="service-actions">
+                    <a href="https://wa.me/919393934013?text=Hello,%20I%20need%20this%20service.%20I%20want%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary btn-whatsapp" style="border-color:transparent;"><i class="fa-brands fa-whatsapp"></i> Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neuro & Ortho -->
+        <div class="service-row fade-up" id="neuro">
+            <div class="service-img">
+                <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600&h=400" alt="Neuro & Orthopedic Treatments">
+            </div>
+            <div class="service-content">
+                <h2>Neuro & Orthopedic Care</h2>
+                <p>Specialized treatments targeting the root cause of nerve and bone ailments. We offer holistic care for Paralysis, Diabetic Neuropathy, and Parkinson's.</p>
+                
+                <div class="service-details">
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-star"></i> Benefits</h4>
+                        <p style="font-size: 0.9rem;">Improved mobility, profound pain relief, nerve strengthening.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clipboard-list"></i> Process</h4>
+                        <p style="font-size: 0.9rem;">Abhyangam, Pizhichil, Kizhi therapies combined with internal medicines.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clock"></i> Duration</h4>
+                        <p style="font-size: 0.9rem;">14 to 28 Days.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-users"></i> Ideal For</h4>
+                        <p style="font-size: 0.9rem;">Patients with arthritis, paralysis, neuropathy, or spinal issues.</p>
+                    </div>
+                </div>
+                
+                <h4 style="margin-bottom: 1rem; color: var(--primary);">Explore Specialized Treatments:</h4>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <a href="paralysis.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Paralysis Treatment</a>
+                    <a href="diabetic-neuropathy.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Diabetic Neuropathy</a>
+                    <a href="parkinsons.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Parkinson's Treatment</a>
+                </div>
+
+                <div class="service-actions">
+                    <a href="https://wa.me/919393934013?text=Hello,%20I%20need%20this%20service.%20I%20want%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary btn-whatsapp" style="border-color:transparent;"><i class="fa-brands fa-whatsapp"></i> Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Infertility Treatments -->
+        <div class="service-row fade-up" id="infertility">
+            <div class="service-img">
+                <img src="images/womens_health.png" alt="Infertility Treatments">
+            </div>
+            <div class="service-content">
+                <h2>Infertility & Women's Health</h2>
+                <p>Comprehensive natural healing for women's health issues like PCOS, PCOD, and Fibroids. We focus on balancing hormones naturally.</p>
+                
+                <div class="service-details">
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-star"></i> Benefits</h4>
+                        <p style="font-size: 0.9rem;">Natural conception support, hormonal balance, regular cycles.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clipboard-list"></i> Process</h4>
+                        <p style="font-size: 0.9rem;">Uttarbasti, specialized diets, Shodhana and Shamana therapies.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clock"></i> Duration</h4>
+                        <p style="font-size: 0.9rem;">3 to 6 Months Course</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-users"></i> Ideal For</h4>
+                        <p style="font-size: 0.9rem;">Couples trying to conceive, women with PCOS/PCOD.</p>
+                    </div>
+                </div>
+                
+                <h4 style="margin-bottom: 1rem; color: var(--primary);">Explore Specialized Treatments:</h4>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 2rem;">
+                    <a href="pcos.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">PCOS Treatment</a>
+                    <a href="pcod.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">PCOD Treatment</a>
+                    <a href="fibroids.html" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Fibroids Treatment</a>
+                </div>
+
+                <div class="service-actions">
+                    <a href="https://wa.me/919393934013?text=Hello,%20I%20need%20this%20service.%20I%20want%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary btn-whatsapp" style="border-color:transparent;"><i class="fa-brands fa-whatsapp"></i> Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Child Immunity -->
+        <div class="service-row fade-up" id="child">
+            <div class="service-img">
+                <img src="images/child_immunity.png" alt="Swarnaprashana Therapy">
+            </div>
+            <div class="service-content">
+                <span class="about-badge" style="margin-bottom: 0.5rem; background: rgba(212, 175, 55, 0.2);">Special Treatment</span>
+                <h2>Swarnaprashana Therapy</h2>
+                <p>An ancient Ayurvedic practice specifically tailored to improve immunity, intellect, and physical strength in growing children.</p>
+                
+                <div class="service-details">
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-star"></i> Benefits</h4>
+                        <p style="font-size: 0.9rem;">Enhances memory, digestion, and builds a robust immune system.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clipboard-list"></i> Process</h4>
+                        <p style="font-size: 0.9rem;">Administration of pure Gold bhasma with honey, ghee, and active herbs.</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-clock"></i> Duration</h4>
+                        <p style="font-size: 0.9rem;">Once a month (on Pushya Nakshatra day).</p>
+                    </div>
+                    <div class="service-detail-item">
+                        <h4><i class="fa-solid fa-users"></i> Ideal For</h4>
+                        <p style="font-size: 0.9rem;">Children aged 0 to 16 years.</p>
+                    </div>
+                </div>
+                
+                <div class="service-actions">
+                    <a href="https://wa.me/919393934013?text=Hello,%20I%20need%20this%20service.%20I%20want%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary btn-whatsapp" style="border-color:transparent;"><i class="fa-brands fa-whatsapp"></i> Book Appointment</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="nav-logo" style="color:var(--white); margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-leaf text-secondary" style="margin-right: 5px;"></i>
+                        Sri Tulasi <span style="color:rgba(255,255,255,0.7);">Ayurvedic Hospital</span>
+                    </div>
+                    <p style="font-size: 0.9rem;">Authentic Ayurvedic Healing with Modern Care. NABH Certified.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Desk</h4>
+                    <ul class="footer-links">
+                        <li><strong>24/7 Helpline:</strong></li>
+                        <li><a href="tel:09393934013"><i class="fa-solid fa-phone text-secondary" style="margin-right:5px;"></i> 093939 34013</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Tulasi Ayurvedic Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919393934013" target="_blank" class="floating-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="app.js"></script>
+</body>
+</html>

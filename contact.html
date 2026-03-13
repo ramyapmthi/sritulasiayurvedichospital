@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Locations | Sri Tulasi Ayurvedic Hospital</title>
+    <!-- FontAwesome & Main Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-leaf text-secondary" style="font-size: 2rem;"></i>
+                <div class="nav-logo">
+                    Sri Tulasi 
+                    <span>Ayurvedic Hospital</span>
+                </div>
+            </a>
+            <nav>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link active">Locations</a></li>
+                    <li><a href="https://wa.me/919393934013?text=Hello,%20I%20need%20to%20confirm%20my%20appointment." target="_blank" class="btn btn-primary">Start Your Healing Journey</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header fade-up">
+        <div class="container">
+            <h1>Contact & Locations</h1>
+            <p>We're here to support your healing journey, 24/7.</p>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section class="container section-padding pb-0 fade-up" style="padding-top: 4rem;">
+        <div class="text-center" style="margin-bottom: 3rem;">
+            <h2>Our Branches</h2>
+            <p>Visit us at either of our premium locations for consultation and treatment.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Sullurupeta Branch -->
+            <div class="branch-card fade-up">
+                <h3>Sullurupeta Branch</h3>
+                <p><i class="fa-solid fa-location-dot"></i> <span>Opposite Sri Chengalamma Temple, Indiranagar, Srinagar Colony, Sullurupeta, Andhra Pradesh 524121</span></p>
+                <p><i class="fa-solid fa-clock"></i> <span>Open 24 hours</span></p>
+                <p><i class="fa-solid fa-phone"></i> <span>093939 34013</span></p>
+                
+                <div style="margin-top: 1.5rem; width: 100%; height: 200px; background:#ddd; border-radius: var(--radius-md); overflow:hidden; position:relative;">
+                    <a href="https://maps.app.goo.gl/Wo7VFZSxS6ZoYtuPA" target="_blank" style="display:flex; width:100%; height:100%; align-items:center; justify-content:center; background: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800') center/cover; text-decoration:none;">
+                        <div style="background: rgba(255,255,255,0.9); padding: 1rem 2rem; border-radius: 50px; font-weight: 600; color: var(--primary); box-shadow: var(--shadow-md);"><i class="fa-solid fa-map-location-dot text-secondary" style="margin-right: 8px;"></i> Open in Google Maps</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sri City Branch -->
+            <div class="branch-card fade-up">
+                <h3>Main Branch (Sri City)</h3>
+                <p><i class="fa-solid fa-location-dot"></i> <span>Sri City, 1 Acre Premium Wellness Campus</span></p>
+                <p><i class="fa-solid fa-spa"></i> <span>Sensory Healing Pathways & Open Yoga</span></p>
+                <p><i class="fa-solid fa-clock"></i> <span>Open 24 hours</span></p>
+                <p><i class="fa-solid fa-phone"></i> <span>093939 34013</span></p>
+                
+                <div style="margin-top: 1.5rem; width: 100%; height: 200px; background:var(--primary); color:white; border-radius: var(--radius-md); display:flex; align-items:center; justify-content:center; flex-direction:column; text-align:center; padding: 1rem;">
+                    <i class="fa-solid fa-map-location-dot" style="font-size: 3rem; margin-bottom: 10px; color: var(--secondary);"></i>
+                    <p style="margin:0; font-family: var(--font-body);">1 Acre Wellness Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Insurance Help Desk -->
+    <section class="container section-padding fade-up" id="book" style="margin-bottom: 4rem;">
+        <div class="contact-grid">
+            
+            <!-- Booking Form -->
+            <div class="contact-form fade-up">
+                <h2 style="font-size: 2rem; margin-bottom: 2rem;">Book an Appointment</h2>
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="b_name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="b_phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" id="b_date" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="b_service" required>
+                            <option value="">Select Treatment</option>
+                            <option value="Panchakarma Therapy">Panchakarma Therapy</option>
+                            <option value="Paralysis Treatment">Paralysis Treatment</option>
+                            <option value="Diabetic Neuropathy Treatment">Diabetic Neuropathy Treatment</option>
+                            <option value="Parkinson’s Treatment">Parkinson’s Treatment</option>
+                            <option value="PCOS Treatment">PCOS Treatment</option>
+                            <option value="PCOD Treatment">PCOD Treatment</option>
+                            <option value="Fibroids Treatment">Fibroids Treatment</option>
+                            <option value="Skin Disorders Treatment">Skin Disorders Treatment</option>
+                            <option value="Gastro / Allergic / Pulmonology Treatment">Gastro / Allergic / Pulmonology Treatment</option>
+                            <option value="Stress Management">Stress Management</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="b_message" rows="4" placeholder="Describe your health issue briefly..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Book via WhatsApp</button>
+                    <p style="text-align:center; font-size: 0.8rem; margin-top:10px; color:var(--text-muted);">You will be redirected to WhatsApp to confirm your appointment.</p>
+                </form>
+            </div>
+
+            <!-- Insurance Info -->
+            <div class="fade-up" style="display: flex; flex-direction: column; justify-content: center;">
+                <div style="background: var(--bg-color); padding: 3rem; border-radius: var(--radius-lg); border-left: 5px solid var(--secondary);">
+                    
+                    <h2 style="margin-bottom: 1.5rem;"><i class="fa-solid fa-shield-halved text-secondary"></i> Insurance Help Desk</h2>
+                    <p>Focus entirely on your healing. Our dedicated Help Desk provides seamless cashless admission and processing with 14 major insurance partners.</p>
+                    
+                    <ul style="list-style: none; padding-left:0; margin-bottom: 2rem;">
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check text-secondary" style="margin-right:10px;"></i> Tie-up with 14 Insurance Companies</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check text-secondary" style="margin-right:10px;"></i> Dedicated Cashless Facilitation</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check text-secondary" style="margin-right:10px;"></i> Complete Documentation Assistance</li>
+                    </ul>
+
+                    <h4 style="margin-bottom: 1rem; color: var(--primary);">Need Help with Insurance?</h4>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="tel:09393934013" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call 093939 34013</a>
+                        <a href="https://wa.me/919393934013?text=Hi, I need assistance with Insurance Claim." target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat Now</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="nav-logo" style="color:var(--white); margin-bottom: 1.5rem;">
+                        <i class="fa-solid fa-leaf text-secondary" style="margin-right: 5px;"></i>
+                        Sri Tulasi <span style="color:rgba(255,255,255,0.7);">Ayurvedic Hospital</span>
+                    </div>
+                    <p style="font-size: 0.9rem;">Authentic Ayurvedic Healing with Modern Care. NABH Certified.</p>
+                    <div style="font-size: 1.5rem; margin-top: 1.5rem; display:flex; gap: 15px;">
+                        <a href="#"><i class="fa-brands fa-facebook" style="color:var(--white);"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram" style="color:var(--white);"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul class="footer-links">
+                        <li style="color: rgba(255,255,255,0.7);"><i class="fa-solid fa-location-dot text-secondary" style="margin-right: 5px;"></i> Sullurupeta Branch</li>
+                        <li style="color: rgba(255,255,255,0.7); margin-top: 0.5rem;"><i class="fa-solid fa-location-dot text-secondary" style="margin-right: 5px;"></i> Sri City Branch</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sri Tulasi Ayurvedic Hospital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919393934013" target="_blank" class="floating-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="app.js"></script>
+    <script>
+        document.getElementById('bookingForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('b_name').value;
+            const phone = document.getElementById('b_phone').value;
+            const date = document.getElementById('b_date').value;
+            const service = document.getElementById('b_service').value;
+            const msg = document.getElementById('b_message').value;
+
+            const text = `Hello, I want to book an appointment.%0AName: ${name}%0AMobile: ${phone}%0ATreatment: ${service}%0ADate: ${date}%0AMessage: ${msg}`;
+            window.open(`https://wa.me/919393934013?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
