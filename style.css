@@ -406,12 +406,7 @@ img {
   width: auto;
   max-width: 160px;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.85);
   transition: var(--transition);
-}
-
-.slide:hover img {
-  filter: grayscale(0%) opacity(1);
 }
 
 @keyframes scroll {

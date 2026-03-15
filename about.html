@@ -83,19 +83,117 @@
     <!-- Credentials Section Block -->
     <section class="container" style="padding-bottom: 5rem;">
         <div class="credentials-block fade-up">
-            <i class="fa-solid fa-certificate"></i>
-            <h2>NABH Certified & Cashless Enabled</h2>
-            <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto 2rem auto;">
+            <div style="margin-bottom: 2rem; margin-top: 1rem; text-align: center;">
+                <img src="images/nabh_logo.png" alt="NABH Certified Hospital" style="display: inline-block; height: 120px; width: auto; object-fit: contain; margin-bottom: 0.5rem;">
+                <p style="font-weight: 600; font-size: 1.1rem; color: var(--text-dark); margin: 0 auto;">NABH Entry Level Certified – EAH-2023-0047</p>
+            </div>
+            
+            <h2 style="margin-top: 1rem;">NABH Certified & Cashless Enabled</h2>
+            <p style="font-size: 1.1rem; max-width: 800px; margin: 1rem auto; padding: 0 1rem;">
                 We are proud to be an <strong>NABH Certified Ayurvedic Hospital</strong>. This prestigious certification
                 ensures that we maintain the highest standards of safety, hygiene, and patient care matching the
                 reliability of modern hospitals.
             </p>
-            <p style="max-width: 800px; margin: 0 auto; margin-bottom: 2rem;">
+            <p style="max-width: 800px; margin: 0 auto; margin-bottom: 3rem; padding: 0 1rem;">
                 Furthermore, understanding the needs of our patients, we offer a seamless <strong>Cashless Insurance
                     Facility</strong>. We have official tie-ups with <strong>14 major insurance companies</strong>,
                 ensuring that your journey to wellness is not hindered by administrative or financial stress. Focus
                 entirely on your healing while our dedicated Help Desk handles the rest.
             </p>
+
+            <h3 style="margin-bottom: 2rem; color: var(--primary);">Our Insurance Partners</h3>
+            
+            <style>
+                .insurance-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                    gap: 2rem;
+                    align-items: center;
+                    justify-items: center;
+                    max-width: 1000px;
+                    margin: 0 auto 3rem auto;
+                    padding: 0 1rem;
+                }
+                .insurance-logo-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 80px;
+                    background: var(--white);
+                    border-radius: var(--radius-sm);
+                    padding: 10px;
+                    box-shadow: var(--shadow-sm);
+                    transition: var(--transition);
+                }
+                .insurance-logo-item img {
+                    max-height: 55px;
+                    max-width: 100%;
+                    object-fit: contain;
+                    transition: all 0.3s ease;
+                }
+                .insurance-logo-item:hover {
+                    transform: translateY(-5px);
+                    box-shadow: var(--shadow-md);
+                }
+                @media (max-width: 768px) {
+                    .insurance-grid {
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 1.5rem;
+                    }
+                    .insurance-logo-item {
+                        height: 70px;
+                    }
+                    .insurance-logo-item img {
+                        max-height: 45px;
+                    }
+                }
+                @media (max-width: 480px) {
+                    .insurance-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
+                    }
+                }
+            </style>
+
+            <div class="insurance-grid">
+                <div class="insurance-logo-item">
+                    <img src="images/icici.png" alt="ICICI Lombard" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/starhealth.png" alt="Star Health Insurance" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/care.png" alt="Care Health Insurance" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/bajaj.png" alt="Bajaj Allianz" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/paramount.png" alt="Paramount Health" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/healthindia.png" alt="Health India TPA" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/universalsompo.png" alt="Universal Sompo" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/acko.png" alt="ACKO Insurance" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/fhpl.png" alt="FHPL" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/volo.png" alt="VOLO Health" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/galaxy.png" alt="Galaxy Health Insurance" loading="lazy">
+                </div>
+                <div class="insurance-logo-item">
+                    <img src="images/tataaig.png" alt="Tata AIG" loading="lazy">
+                </div>
+            </div>
 
             <a href="tel:09908856006" class="btn btn-outline" style="border-width: 2px;">Consult our Insurance Help
                 Desk</a>
