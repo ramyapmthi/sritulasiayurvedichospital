@@ -175,6 +175,30 @@ img {
   font-weight: 400;
 }
 
+/* Custom Image Logos */
+.brand-logo-header {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
+.brand-text-header {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.brand-logo-footer {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition);
+}
+
 .nav-menu {
   display: flex;
   gap: 2rem;
@@ -314,6 +338,89 @@ img {
   font-size: 1rem;
   margin: 0;
   color: var(--text-dark);
+}
+
+/* NABH Logo in Trust Bar */
+.nabh-logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.trust-item-hover:hover .nabh-logo {
+  transform: scale(1.15) rotate(2deg);
+  filter: drop-shadow(0px 8px 12px rgba(212, 175, 55, 0.3));
+}
+
+/* --- INSURANCE PARTNERS SLIDER --- */
+.insurance-partners {
+  background-color: rgba(26,67,49,0.03); /* Soft background */
+  padding: 4rem 0;
+  margin-top: 2rem;
+}
+
+.slider-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.slider-track {
+  display: inline-flex;
+  gap: 3rem;
+  animation: scroll 35s linear infinite;
+  align-items: center;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+.slide {
+  width: auto;
+  min-width: 140px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem 1.5rem;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.slide:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.slide img {
+  height: 55px; /* Between 50px-60px height constraint */
+  width: auto;
+  max-width: 160px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.85);
+  transition: var(--transition);
+}
+
+.slide:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 1.5rem));
+  }
 }
 
 /* --- ABOUT SNIPPET --- */
@@ -734,6 +841,9 @@ img {
   .nav-menu.active { left: 0; }
   .menu-toggle { display: block; }
   
+  .brand-logo-header { height: 45px; }
+  .brand-text-header { font-size: 1.1rem; }
+
   .hero-content h1 { font-size: 2.2rem; }
   .hero-actions { flex-direction: column; }
   
@@ -742,6 +852,27 @@ img {
     padding: 1rem;
   }
   .trust-item h4 { font-size: 0.8rem; }
+  
+  .insurance-partners {
+    padding: 3rem 0;
+    margin-top: 1rem;
+  }
+  .slide {
+    width: auto;
+    min-width: 120px;
+    height: 80px;
+    padding: 0.8rem;
+  }
+  .slide img {
+    height: 50px;
+  }
+  .slider-track {
+    gap: 1.5rem;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 0.75rem)); }
+  }
   
   .section-title { font-size: 2rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "google-images": "^2.1.0",
+    "image-search-engine": "^1.2.1"
+  }
+}
